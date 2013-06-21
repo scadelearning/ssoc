@@ -1,0 +1,202 @@
+/* Replace the gray background with something that matches your colors.  You can use .pngs with alpha transparency. If you don't use an image, you need to remove ours*/
+#header { 
+  /*background: url("noisy_blue.png?v1") repeat-x scroll center transparent;*/
+  background-image: none; 
+  background-color: #fff;
+  border-bottom: 3px solid #333;
+  width:100%;
+  max-width: 1561px;
+  position:fixed;
+}
+
+
+/*replace the canvas logo with your logo*/
+#header-logo, #header.no-user #header-logo {
+  background: url("../img/scad_banner_logo.png?v2") no-repeat scroll 0 0 transparent;
+  top: 10px;
+  height: 70px;
+  left: 15px;
+  width: 191px;
+}
+
+
+/*if you replace the left canvas logo, move a smaller one to the right side of the header--I made the image gray first*/
+#header-logo-secondary {
+  background: url("header_canvas_logo2.png?v1") no-repeat scroll 0 0 transparent;
+  bottom: 11px;
+  height: 26;
+  position: absolute;
+  right: 26px;
+  width: 135px;
+  display: block;
+}
+
+/*if your logo is bigger, you can make room like this*/
+#menu { margin-left: 250px; }
+
+/*change the identity bar (the area that says "Hilary Scharton Inbox Settings Logout Help)*/
+#identity {
+  background-image: none;
+  background-color: #555;
+}
+
+/*change the color of the identity text*/
+#identity a { color: eee; }
+/*change the color of the circle around the number of unread inbox messages*/
+#identity .inbox a .unread-messages-count { background-color: #F2F0DD; }
+#identity #identity-help-container a { color: #eee; }
+
+/*change the color of the menu items (courses & groups etc.). If the text looks fuzzy, remove the text shadow.*/
+.menu-item .menu-item-title, .menu-item .menu-item-no-drop {
+  color: #333;
+  font-weight:500;
+  text-shadow: none;
+}
+
+/*main content area*/
+#main {
+  margin-top:70px;
+}
+
+.user_content {
+	font-size: 16px;
+	padding: 0 2em;
+}
+
+h2.title {
+	font-family: 'Advent Pro', sans-serif;
+	font-size: 2em;
+	color: #333;
+	margin:30px 0 7px;
+}
+
+p, ul, ol {
+	font-family: 'Average Sans', sans-serif;
+	font-size: 1em;
+	line-height: 1.5em;
+	color: #444;
+}
+
+/*#wiki_body p {
+	width: 32em;
+	margin: .750em 0;
+}*/
+
+.floatRight {
+	float:right;
+	width:27%;
+	margin-left: 25px;
+}
+
+.floatRight img {
+	padding: 5px;
+	border: 1px solid #333;
+	border-radius:3px;
+	max-width:100% !important;
+}
+
+.floatLeft {
+	float:left;
+	width:27%;
+	margin-right: 25px;
+}
+
+.floatLeft img {
+	padding: 5px;
+	border: 1px solid #333;
+	border-radius:3px;
+	max-width:100% !important;
+}
+
+.adjust {
+	padding: 0 0 0 6em;
+}
+
+.floatMiddle {
+	width: auto;
+	margin:2em 23%;
+}
+.floatMiddle img {
+	padding: 5px;
+	border: 1px solid #333;
+	border-radius:3px;
+	max-width:100% !important;
+}
+
+.sideByside {
+	width:76%;
+	margin: 0 14%;
+}
+.sideByside div {
+	width: 39%;
+	float: left;
+	margin: 0 2em 0 0;
+}
+.sideByside div:last-child {
+	margin: 0;
+}
+.sideByside img {
+	width: 100%;
+	padding: 5px;
+	border: 1px solid #333;
+	border-radius:3px;
+	max-width:100% !important;
+}
+.sideByside+p {
+	clear: both;
+}
+
+.caption {
+	display: block;
+	font-size: 12px;
+}
+
+#footnotes {
+	border-top: 1px dashed #aaa;
+	margin:25px 0;
+	padding:10px 35px;
+	font-size: 10px;
+}
+
+#sequence_footer {
+	padding: 1em 2em !important;
+}
+
+/*login box*/
+
+#modal-box.login-box { background: none;}
+
+/*this will remove the extra canvas logo*/
+body.modal #modal-box.login-box h1 { 
+  width: 384px;
+  height: 115px;
+  margin: 0 auto 55px;
+  background-color: transparent;
+  background-image: url("../img/login_logo.png?v2");
+  background-repeat: no-repeat;
+  background-position: 0px 10px;
+  text-indent: -999em;
+}
+
+/*resize the login box to fit my image and change the color of 'stay signed in'*/
+body.modal #modal-box.login-box { 
+  height: 331px;
+  width: 623px;
+  color: #2784A0;
+}
+
+/*change the color of 'don't know your password'*/
+body.modal #modal-box.login-box a { color: #2784A0 !important; } 
+
+/*change the color of the login button*/
+body.modal #modal-box .button, body.modal #login-box .button {
+  background-color: #EBF5FA !important;
+  background-image: none !important;
+  border-color: #668F78;
+}
+  
+#login_form .btn-primary, #login_form .btn-primary:hover {
+  background-color: #ae5321;
+  background-image: none;
+  border: none !important;
+  }
